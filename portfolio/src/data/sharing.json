@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Building Scalable Microservices with Node.js",
+    "platform": "Medium",
+    "date": "2024-11-15",
+    "description": "A deep dive into architecting microservices that can handle millions of requests per day.",
+    "url": "https://medium.com/@saifahmad/building-scalable-microservices"
+  },
+  {
+    "id": "2",
+    "title": "Product Discovery: E-Commerce Platform Redesign",
+    "platform": "Notion",
+    "date": "2024-10-20",
+    "description": "Case study on improving conversion rates through user research and iterative design.",
+    "url": "https://notion.so/saifahmad/ecommerce-case-study"
+  },
+  {
+    "id": "3",
+    "title": "TypeScript Best Practices for Large Codebases",
+    "platform": "LinkedIn",
+    "date": "2024-09-05",
+    "description": "Lessons learned from maintaining type safety across multiple teams and repositories.",
+    "url": "https://linkedin.com/pulse/typescript-best-practices-saif-ahmad"
+  },
+  {
+    "id": "4",
+    "title": "The Future of Web Performance",
+    "platform": "General",
+    "date": "2024-08-12",
+    "description": "Exploring emerging trends in web performance optimization and Core Web Vitals.",
+    "url": "https://blog.saifahmad.dev/web-performance-future"
+  },
+  {
+    "id": "5",
+    "title": "React Server Components: A Practical Guide",
+    "platform": "Medium",
+    "date": "2024-07-28",
+    "description": "Understanding when and how to use React Server Components in production applications.",
+    "url": "https://medium.com/@saifahmad/react-server-components-guide"
+  }
+]

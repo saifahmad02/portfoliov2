@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "title": "TaskFlow - Project Management App",
+    "shortDescription": "A collaborative project management tool with real-time updates and team collaboration features.",
+    "fullDescription": "TaskFlow is a comprehensive project management application designed for remote teams. Features include real-time task updates, drag-and-drop kanban boards, team chat, file sharing, and analytics dashboards. Built with a focus on performance and user experience, supporting teams of up to 100 members.",
+    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.io", "Tailwind CSS"],
+    "thumbnail": "/images/projects/taskflow.jpg",
+    "liveUrl": "https://taskflow-demo.vercel.app",
+    "repoUrl": "https://github.com/saifahmad/taskflow"
+  },
+  {
+    "id": "2",
+    "title": "EcoTracker - Carbon Footprint Calculator",
+    "shortDescription": "An application that helps users track and reduce their carbon footprint through daily activities.",
+    "fullDescription": "EcoTracker enables users to monitor their environmental impact by logging daily activities such as transportation, energy usage, and consumption habits. The app provides personalized recommendations for reducing carbon emissions and tracks progress over time. Includes data visualization, goal setting, and community challenges to encourage sustainable living.",
+    "technologies": ["React Native", "Node.js", "MongoDB", "Express", "Chart.js"],
+    "thumbnail": "/images/projects/ecotracker.jpg",
+    "liveUrl": "https://ecotracker.app",
+    "repoUrl": "https://github.com/saifahmad/ecotracker"
+  },
+  {
+    "id": "3",
+    "title": "DevHub - Developer Portfolio Platform",
+    "shortDescription": "A platform for developers to showcase their work and connect with potential employers.",
+    "fullDescription": "DevHub is a portfolio platform specifically designed for software developers. It automatically imports projects from GitHub, generates analytics on coding activity, and provides customizable portfolio templates. Features include skills assessment, project showcases, blog integration, and a job board. The platform has helped over 1,000 developers land their dream jobs.",
+    "technologies": ["Next.js", "GraphQL", "PostgreSQL", "Redis", "GitHub API", "Shadcn UI"],
+    "thumbnail": "/images/projects/devhub.jpg",
+    "liveUrl": "https://devhub.io",
+    "repoUrl": "https://github.com/saifahmad/devhub"
+  },
+  {
+    "id": "4",
+    "title": "FitnessPro - Workout Tracking App",
+    "shortDescription": "A comprehensive fitness tracking application with workout plans and progress analytics.",
+    "fullDescription": "FitnessPro helps users achieve their fitness goals through structured workout plans, exercise tracking, and progress visualization. Features include customizable workout routines, video exercise demonstrations, nutrition tracking, and social features for sharing achievements. Uses machine learning to provide personalized workout recommendations based on user progress and goals.",
+    "technologies": ["React", "Python", "FastAPI", "PostgreSQL", "TensorFlow", "AWS S3"],
+    "thumbnail": "/images/projects/fitnesspro.jpg",
+    "liveUrl": "https://fitnesspro.app"
+  }
+]
