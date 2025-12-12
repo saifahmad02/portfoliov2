@@ -45,14 +45,14 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
       <div className="relative bg-background rounded-lg shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-border">
         {/* Header */}
         <div className="sticky top-0 bg-background border-b border-border p-6 flex justify-between items-center">
-          {title && <h2 className="text-2xl font-serif font-bold text-foreground">{title}</h2>}
+          {title && <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-foreground">{title}</h2>}
           <button
             onClick={onClose}
             className="ml-auto text-muted hover:text-foreground transition-colors"
             aria-label="Close modal"
           >
             <svg
-              className="w-6 h-6"
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"

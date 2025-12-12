@@ -21,6 +21,22 @@ export const metadata: Metadata = {
   description: "Software Engineer & Full-Stack Developer - Building scalable applications and sharing insights on modern web development.",
 };
 
+// Script to prevent flash - runs before React hydrates
+const themeScript = `
+  (function() {
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (stored === 'dark' || (!stored && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  })();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,6 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className={`${cormorantGaramond.variable} ${redHatMono.variable} font-mono antialiased`}>
         {children}
       </body>

@@ -13,14 +13,14 @@ export default function Hero() {
           <h1
             className="font-serif font-bold text-accent leading-none mb-8 sm:mb-12"
             style={{
-              fontSize: 'clamp(3.5rem, 9vw, 14rem)',
+              fontSize: 'clamp(5.5rem, 12vw, 18rem)',
             }}
           >
             {profileData.name}
           </h1>
 
           {/* Bio - Smaller, more readable proportions */}
-          <div className="max-w-5xl mb-12 sm:mb-16">
+          <div className="w-full max-w-[70%] mb-12 sm:mb-16">
             <p
               className="font-mono text-foreground leading-relaxed"
               style={{

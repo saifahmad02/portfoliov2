@@ -5,7 +5,12 @@
     "role": "Senior Software Engineer",
     "startDate": "2022-06",
     "endDate": null,
-    "description": "Leading development of cloud-native applications serving 500K+ users. Architected microservices infrastructure that reduced response times by 40%. Mentoring junior developers and establishing engineering best practices.",
+    "shortDate": "2022 – Present",
+    "points": [
+      "Leading development of cloud-native applications serving 500K+ users",
+      "Architected microservices infrastructure that reduced response times by 40%",
+      "Mentoring junior developers and establishing engineering best practices"
+    ],
     "technologies": ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker", "Kubernetes"]
   },
   {
@@ -14,7 +19,12 @@
     "role": "Full-Stack Developer",
     "startDate": "2020-03",
     "endDate": "2022-05",
-    "description": "Built core features for a B2B SaaS platform from the ground up. Implemented real-time collaboration features using WebSockets. Improved application performance through code optimization and caching strategies.",
+    "shortDate": "2020 – 2022",
+    "points": [
+      "Built core features for a B2B SaaS platform from the ground up",
+      "Implemented real-time collaboration features using WebSockets",
+      "Improved application performance through code optimization and caching strategies"
+    ],
     "technologies": ["Next.js", "Express", "MongoDB", "Redis", "Socket.io", "Tailwind CSS"]
   },
   {
@@ -23,7 +33,12 @@
     "role": "Frontend Developer",
     "startDate": "2018-08",
     "endDate": "2020-02",
-    "description": "Developed responsive web applications for clients across various industries. Collaborated with designers to create pixel-perfect implementations. Optimized websites for SEO and accessibility.",
+    "shortDate": "2018 – 2020",
+    "points": [
+      "Developed responsive web applications for clients across various industries",
+      "Collaborated with designers to create pixel-perfect implementations",
+      "Optimized websites for SEO and accessibility"
+    ],
     "technologies": ["React", "JavaScript", "SCSS", "Webpack", "REST APIs", "Git"]
   }
 ]
