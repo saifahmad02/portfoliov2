@@ -72,8 +72,8 @@ export default function About() {
         </p>
 
         <p>
-          I enjoy writing about my work and experiences, and connecting with others who are curious about engineering and growth.{" "}
-          <span className="text-accent">I&apos;m always open to conversations, so feel free to reach out!</span>
+          I enjoy writing about my work, experiences, and connecting with others who are curious about engineering and growth.{" "}
+          <span className="text-accent">I&apos;m always open to conversations about software, learning, or anything else, so feel free to reach out!</span>
         </p>
 
         <p>

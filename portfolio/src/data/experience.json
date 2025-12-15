@@ -6,7 +6,7 @@
     "role": "Infrastructure Solution Consultant Intern, Data & Infrastructure",
     "startDate": "2024-05",
     "endDate": "2024-08",
-    "shortDate": "May 2024 – August 2024",
+    "shortDate": "May 2024 – Aug 2024",
     "points": [
       "Partnered with engineers to design and quote on-prem and cloud infrastructure solutions for internal teams. Automated internal Excel trackers with Python to streamline project tracking and reduce manual work. Solved data access issues by merging multiple Excel trackers into a unified Confluence database using Python and Pandas, improving data accessibility across teams."
     ],
@@ -23,7 +23,7 @@
     "points": [
       "Supported technical sales teams as a Design Engineering Intern, working closely with enterprise clients to scope and deliver solutions. Designed and quoted over 70 cloud and VoIP integrations, contributing to a $4M+ sales funnel. Developed an Agile-based workflow that improved cross-team collaboration and reduced handoff time. Coordinated with external vendors to validate requirements and resolve design issues early in the process."
     ],
-    "technologies": null
+    "technologies": ["AWS", "Azure", "Microsoft 365", "VoIP"]
   },
   {
     "id": "3",
@@ -32,7 +32,7 @@
     "role": "Lead Software Engineer",
     "startDate": "2023-02",
     "endDate": "2023-06",
-    "shortDate": "February 2023 – May 2023",
+    "shortDate": "Feb 2023 – May 2023",
     "points": [
       "Led a 7-person student development team to build a React.js and Firebase application that automated data entry and generated government-compliant PDF reports. Engineered full-stack features including OAuth authentication, PostgreSQL storage, a REST API for PDF generation, and a CI/CD pipeline using GitHub Actions. Worked closely with the client to gather requirements and ensure the final product met their operational needs."
     ],

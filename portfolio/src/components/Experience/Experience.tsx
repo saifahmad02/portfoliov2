@@ -14,12 +14,12 @@ function formatDateRange(startDate: string, endDate: string | null): string {
   };
 
   const start = parseDate(startDate).toLocaleDateString("en-US", {
-    month: "long",
+    month: "short",
     year: "numeric",
   });
   const end = endDate
     ? parseDate(endDate).toLocaleDateString("en-US", {
-        month: "long",
+        month: "short",
         year: "numeric",
       })
     : "Present";
@@ -132,7 +132,12 @@ export default function Experience() {
               >
                 {/* Content */}
                 <div className="flex-1 min-w-0 pb-6 md:pb-12">
-                  {/* Top row: Company and Date */}
+                  {/* Date - Mobile only (above company) */}
+                  <span className="md:hidden block text-[10px] font-mono text-muted mb-1">
+                    {formatDateRange(exp.startDate, exp.endDate)}
+                  </span>
+
+                  {/* Company name row - Date shown on desktop only */}
                   <div className="flex items-start justify-between gap-2 mb-1.5 md:mb-3">
                     {exp.companyUrl ? (
                       // External link case
@@ -146,7 +151,7 @@ export default function Experience() {
                       >
                         {exp.company}
                         <svg
-                          className="w-3.5 h-3.5 md:w-4 md:h-4 opacity-60 group-hover:opacity-100 transition-opacity"
+                          className="w-3 h-3 md:w-4 md:h-4 opacity-60 group-hover:opacity-100 transition-opacity shrink-0"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
@@ -164,13 +169,13 @@ export default function Experience() {
                       // Message popup case
                       <button
                         onClick={() => setModalMessage({ company: exp.company, message: exp.companyMessage! })}
-                        className={`group inline-flex items-center gap-1.5 text-base md:text-xl lg:text-xl xl:text-2xl font-serif font-semibold transition-colors duration-300 hover:text-accent ${
+                        className={`group inline-flex items-center gap-1.5 text-base md:text-xl lg:text-xl xl:text-2xl font-serif font-semibold transition-colors duration-300 hover:text-accent text-left ${
                           isActive ? "text-accent" : "text-foreground"
                         }`}
                       >
                         {exp.company}
                         <svg
-                          className="w-3.5 h-3.5 md:w-4 md:h-4 opacity-60 group-hover:opacity-100 transition-opacity"
+                          className="w-3 h-3 md:w-4 md:h-4 opacity-60 group-hover:opacity-100 transition-opacity shrink-0"
                           fill="none"
                           stroke="currentColor"
                           strokeWidth="2"
@@ -191,7 +196,8 @@ export default function Experience() {
                         {exp.company}
                       </h3>
                     )}
-                    <span className="text-[10px] md:text-sm font-mono text-muted whitespace-nowrap">
+                    {/* Date - Desktop only (right side) */}
+                    <span className="hidden md:block text-sm font-mono text-muted whitespace-nowrap">
                       {formatDateRange(exp.startDate, exp.endDate)}
                     </span>
                   </div>

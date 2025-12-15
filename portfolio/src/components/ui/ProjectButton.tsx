@@ -100,7 +100,7 @@ export default function ProjectButton({ link }: ProjectButtonProps) {
       href={link.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-lg font-mono text-sm text-foreground hover:text-accent hover:border-accent transition-colors duration-200"
+      className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 border border-border rounded-lg font-mono text-xs md:text-sm text-foreground hover:text-accent hover:border-accent transition-colors duration-200"
     >
       {link.label}
       {getIcon(link.icon)}

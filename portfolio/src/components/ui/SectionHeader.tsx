@@ -8,10 +8,10 @@ export default function SectionHeader({ title, tagline }: SectionHeaderProps) {
     <div className="mb-8">
       {/* Mobile: Show title + tagline */}
       <div className="lg:hidden">
-        <h2 className="font-serif font-bold text-foreground text-2xl mb-2">
+        <h2 className="font-serif font-bold text-accent text-2xl mb-2">
           {title}
         </h2>
-        <p className="font-mono font-bold text-accent text-lg">
+        <p className="font-mono text-foreground text-xs">
           {tagline}
         </p>
       </div>
