@@ -8,7 +8,7 @@ interface ProfileLinksProps {
 function MediumIcon() {
   return (
     <svg
-      className="w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
@@ -20,7 +20,7 @@ function MediumIcon() {
 function NotionIcon() {
   return (
     <svg
-      className="w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
@@ -32,7 +32,7 @@ function NotionIcon() {
 function LinkedInIcon() {
   return (
     <svg
-      className="w-[18px] h-[18px] md:w-5 md:h-5 lg:w-6 lg:h-6"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
@@ -44,7 +44,7 @@ function LinkedInIcon() {
 function GitHubIcon() {
   return (
     <svg
-      className="w-[18px] h-[18px] md:w-5 md:h-5 lg:w-6 lg:h-6"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
@@ -70,29 +70,24 @@ function PlatformIcon({ icon }: { icon: ProfileLink["icon"] }) {
 
 export default function ProfileLinks({ links }: ProfileLinksProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-6 mt-6 md:mt-10 lg:mt-10 pt-6 md:pt-8 lg:pt-8 border-t border-border">
+    <div className="flex flex-col md:flex-row gap-2 md:gap-3 mt-6 md:mt-6 lg:mt-7 xl:mt-8">
       {links.map((link) => (
         <a
           key={link.id}
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center justify-between md:justify-start gap-2.5 px-4 md:px-5 lg:px-5 py-3.5 md:py-3 lg:py-3.5 border border-border hover:border-accent hover:bg-accent/5 transition-all duration-200 ease-in-out focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2"
+          className="group flex items-center justify-between w-full md:w-auto gap-2.5 px-4 py-3 md:px-4 md:py-2.5 lg:px-4 lg:py-2.5 xl:px-5 xl:py-3.5 border border-border hover:border-accent hover:bg-accent/5 transition-all duration-200 ease-in-out focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2"
         >
           <div className="flex items-center gap-2.5">
             <div className="text-muted group-hover:text-accent transition-colors duration-200">
               <PlatformIcon icon={link.icon} />
             </div>
-            {/* Desktop label */}
-            <span className="hidden md:inline text-[13px] lg:text-base xl:text-lg font-mono text-foreground group-hover:text-accent transition-colors duration-200">
+            <span className="text-sm lg:text-sm xl:text-base font-mono text-foreground group-hover:text-accent transition-colors duration-200 whitespace-nowrap">
               {link.label}
             </span>
-            {/* Mobile label */}
-            <span className="md:hidden text-xs font-mono text-foreground group-hover:text-accent transition-colors duration-200">
-              {link.labelMobile}
-            </span>
           </div>
-          <span className="ml-1 opacity-50 text-foreground group-hover:text-accent transition-colors duration-200 text-base lg:text-lg">
+          <span className="opacity-50 text-foreground group-hover:text-accent transition-colors duration-200 text-sm lg:text-sm xl:text-base shrink-0">
             →
           </span>
         </a>

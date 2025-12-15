@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/ui/ThemeToggle";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("about");
   const [isInHero, setIsInHero] = useState(true);
   const [isScrolling, setIsScrolling] = useState(false);
   const [isHoveringTop, setIsHoveringTop] = useState(false);
@@ -18,12 +18,8 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      // Check if we're in the hero section
-      const heroElement = document.getElementById("hero");
-      if (heroElement) {
-        const heroBottom = heroElement.offsetTop + heroElement.offsetHeight;
-        setIsInHero(window.scrollY < heroBottom - 100);
-      }
+      // Check if we're near the top of the page (replaces hero check)
+      setIsInHero(window.scrollY < 200);
 
       // Set scrolling state to true
       setIsScrolling(true);
@@ -31,22 +27,26 @@ export default function Navbar() {
       // Clear existing timeout
       if (scrollTimeout) clearTimeout(scrollTimeout);
 
-      // Hide navbar 2 seconds after scrolling stops (if not in hero)
+      // Hide navbar 2 seconds after scrolling stops (if not near top)
       scrollTimeout = setTimeout(() => {
         setIsScrolling(false);
       }, 2000);
 
       // Detect active section based on scroll position
-      const sections = ["hero", "sharing", "experience", "projects", "contact"];
-      const scrollPosition = window.scrollY + 100;
+      // Match the scroll-margin-top offset from globals.css
+      // Mobile: 6rem (96px), Desktop: 8rem (128px)
+      const isMobile = window.innerWidth < 768;
+      const scrollMargin = isMobile ? 96 : 128;
+      const sections = ["about", "sharing", "experience", "projects"];
+      const scrollPosition = window.scrollY + scrollMargin + 50; // Extra 50px for better midpoint detection
 
-      for (const section of sections) {
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
           const offsetTop = element.offsetTop;
-          const offsetBottom = offsetTop + element.offsetHeight;
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+          if (scrollPosition >= offsetTop) {
             setActiveSection(section);
             break;
           }
@@ -75,11 +75,10 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
     { name: "Sharing", href: "#sharing" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -124,8 +123,8 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo with emerald accent - larger and more elegant */}
           <a
-            href="#hero"
-            onClick={(e) => scrollToSection(e, "#hero")}
+            href="#about"
+            onClick={(e) => scrollToSection(e, "#about")}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-serif font-bold text-accent hover:text-accent/80 transition-colors"
           >
             sa

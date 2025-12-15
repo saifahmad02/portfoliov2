@@ -1,41 +1,78 @@
 [
   {
     "id": "1",
-    "title": "TaskFlow - Project Management App",
-    "shortDescription": "A collaborative project management tool with real-time updates and team collaboration features.",
-    "fullDescription": "TaskFlow is a comprehensive project management application designed for remote teams. Features include real-time task updates, drag-and-drop kanban boards, team chat, file sharing, and analytics dashboards. Built with a focus on performance and user experience, supporting teams of up to 100 members.",
-    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.io", "Tailwind CSS"],
-    "thumbnail": "/images/projects/taskflow.jpg",
-    "liveUrl": "https://taskflow-demo.vercel.app",
-    "repoUrl": "https://github.com/saifahmad/taskflow"
+    "title": "Copository - AI Documentation Generator",
+    "shortDescription": "A fully deployed serverless application that generates documentation from GitHub repositories using googles Gemini API.",
+    "fullDescription": "Coscribe transforms GitHub repositories into readable documentation using AI. Submit a repo URL and the system fetches, preprocesses, and intelligently analyzes your codebase to generate structured documentation. Capable of handling everything from small utilities to full projects in under two minutes.",
+    "technologies": ["Next.js", "TypeScript", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB", "Gemini API", "Vercel"],
+    "thumbnail": "/images/projects/copository.jpg",
+    "links": [
+      {
+        "type": "live",
+        "label": "View Live Site",
+        "url": "https://www.copository.com",
+        "icon": "external"
+      },
+      {
+        "type": "case-study",
+        "label": "Read Case Study",
+        "url": "https://saifsgallery.notion.site/Copository-295819ee4451808e8e8dea7bf3c7c818",
+        "icon": "document"
+      },
+      {
+        "type": "github",
+        "label": "View Showcase",
+        "url": "https://github.com/saifahmad02/copository-showcase",
+        "icon": "github"
+      }
+    ],
+    "year": "2025",
+    "featured": true
   },
   {
     "id": "2",
-    "title": "EcoTracker - Carbon Footprint Calculator",
-    "shortDescription": "An application that helps users track and reduce their carbon footprint through daily activities.",
-    "fullDescription": "EcoTracker enables users to monitor their environmental impact by logging daily activities such as transportation, energy usage, and consumption habits. The app provides personalized recommendations for reducing carbon emissions and tracks progress over time. Includes data visualization, goal setting, and community challenges to encourage sustainable living.",
-    "technologies": ["React Native", "Node.js", "MongoDB", "Express", "Chart.js"],
-    "thumbnail": "/images/projects/ecotracker.jpg",
-    "liveUrl": "https://ecotracker.app",
-    "repoUrl": "https://github.com/saifahmad/ecotracker"
+    "title": "We.AI - Western Engineering AI Assistant",
+    "shortDescription": "An AI-powered chatbot for Western Engineering students to get instant answers to their questions.",
+    "fullDescription": "We.AI is an AI-powered chatbot designed specifically for Western Engineering students. It provides instant answers to common questions about courses, professors, and university resources. The chatbot is built on a comprehensive dataset compiled from the university's official websites and public data sources to deliver accurate and relevant information.",
+    "technologies": ["Next.js", "Node.js", "Python", "JavaScript", "Jupyter Notebook", "Vertex AI", "Firebase", "Dialogflow CX"],
+    "thumbnail": "/images/projects/WeAi.jpg",
+    "links": [
+      {
+        "type": "demo",
+        "label": "Watch Demo",
+        "url": "https://www.youtube.com/watch?v=qVxx_RitFgc",
+        "icon": "video"
+      },
+      {
+        "type": "github",
+        "label": "View Repository",
+        "url": "https://github.com/jpayippa/WE.AI",
+        "icon": "github"
+      }
+    ],
+    "year": "2025"
   },
   {
     "id": "3",
-    "title": "DevHub - Developer Portfolio Platform",
-    "shortDescription": "A platform for developers to showcase their work and connect with potential employers.",
-    "fullDescription": "DevHub is a portfolio platform specifically designed for software developers. It automatically imports projects from GitHub, generates analytics on coding activity, and provides customizable portfolio templates. Features include skills assessment, project showcases, blog integration, and a job board. The platform has helped over 1,000 developers land their dream jobs.",
-    "technologies": ["Next.js", "GraphQL", "PostgreSQL", "Redis", "GitHub API", "Shadcn UI"],
-    "thumbnail": "/images/projects/devhub.jpg",
-    "liveUrl": "https://devhub.io",
-    "repoUrl": "https://github.com/saifahmad/devhub"
-  },
-  {
-    "id": "4",
-    "title": "FitnessPro - Workout Tracking App",
-    "shortDescription": "A comprehensive fitness tracking application with workout plans and progress analytics.",
-    "fullDescription": "FitnessPro helps users achieve their fitness goals through structured workout plans, exercise tracking, and progress visualization. Features include customizable workout routines, video exercise demonstrations, nutrition tracking, and social features for sharing achievements. Uses machine learning to provide personalized workout recommendations based on user progress and goals.",
-    "technologies": ["React", "Python", "FastAPI", "PostgreSQL", "TensorFlow", "AWS S3"],
-    "thumbnail": "/images/projects/fitnesspro.jpg",
-    "liveUrl": "https://fitnesspro.app"
+    "title": "Portfolio V1 - My First Developer Portfolio",
+    "shortDescription": "My first portfolio website built with Next.js and Tailwind CSS.",
+    "fullDescription": "A personal portfolio website showcasing my projects, skills, and experience as a software engineer. Features a clean, modern design with smooth animations and interactive elements to create an engaging user experience.",
+    "technologies": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "thumbnail": "/images/projects/portfoliov1.jpg",
+    "links": [
+      {
+        "type": "live",
+        "label": "View Live Site",
+        "url": "https://saifahmad.ca",
+        "icon": "external"
+      },
+      {
+        "type": "github",
+        "label": "View Repository",
+        "url": "https://github.com/saifahmad02/portfolio",
+        "icon": "github"
+      }
+    ],
+    "year": "2025"
   }
 ]

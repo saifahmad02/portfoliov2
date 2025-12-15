@@ -8,6 +8,7 @@ export interface SocialLink {
 export interface Profile {
   name: string;
   headline: string;
+  tagline?: string;
   bio: string;
   email: string;
   socialLinks: SocialLink[];
@@ -47,6 +48,8 @@ export type SharingContent = SharingItem;
 export interface Experience {
   id: string;
   company: string;
+  companyUrl?: string; // Optional URL to company website
+  companyMessage?: string; // Optional message for companies without active websites
   role: string;
   startDate: string;
   endDate: string | null; // null for current position
@@ -56,6 +59,13 @@ export interface Experience {
 }
 
 // Project types
+export interface ProjectLink {
+  type: 'live' | 'demo' | 'github' | 'case-study' | 'article' | 'custom';
+  label: string;
+  url: string;
+  icon?: 'external' | 'github' | 'video' | 'document' | 'link';
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -63,6 +73,7 @@ export interface Project {
   fullDescription: string;
   technologies: string[];
   thumbnail: string;
-  liveUrl?: string;
-  repoUrl?: string;
+  links: ProjectLink[];
+  year: string;
+  featured?: boolean;
 }

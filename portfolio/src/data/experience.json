@@ -1,44 +1,41 @@
 [
   {
     "id": "1",
-    "company": "TechCorp Solutions",
-    "role": "Senior Software Engineer",
-    "startDate": "2022-06",
-    "endDate": null,
-    "shortDate": "2022 – Present",
+    "company": "Bank of Montreal",
+    "companyUrl": "https://www.bmo.com",
+    "role": "Infrastructure Solution Consultant Intern, Data & Infrastructure",
+    "startDate": "2024-05",
+    "endDate": "2024-08",
+    "shortDate": "May 2024 – August 2024",
     "points": [
-      "Leading development of cloud-native applications serving 500K+ users",
-      "Architected microservices infrastructure that reduced response times by 40%",
-      "Mentoring junior developers and establishing engineering best practices"
+      "Partnered with engineers to design and quote on-prem and cloud infrastructure solutions for internal teams. Automated internal Excel trackers with Python to streamline project tracking and reduce manual work. Solved data access issues by merging multiple Excel trackers into a unified Confluence database using Python and Pandas, improving data accessibility across teams."
     ],
-    "technologies": ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker", "Kubernetes"]
+    "technologies": ["Python", "Pandas", "Azure","Confluence", "Excel"]
   },
   {
     "id": "2",
-    "company": "StartupXYZ",
-    "role": "Full-Stack Developer",
-    "startDate": "2020-03",
-    "endDate": "2022-05",
-    "shortDate": "2020 – 2022",
+    "company": "Bell Canada",
+    "companyUrl": "https://business.bell.ca/shop/medium-large/business-marketplace",
+    "role": "Technical Sales Support Intern, Pre-Sales Design, Bell Business Markets",
+    "startDate": "2023-05",
+    "endDate": "2024-05",
+    "shortDate": "May 2023 – May 2024",
     "points": [
-      "Built core features for a B2B SaaS platform from the ground up",
-      "Implemented real-time collaboration features using WebSockets",
-      "Improved application performance through code optimization and caching strategies"
+      "Supported technical sales teams as a Design Engineering Intern, working closely with enterprise clients to scope and deliver solutions. Designed and quoted over 70 cloud and VoIP integrations, contributing to a $4M+ sales funnel. Developed an Agile-based workflow that improved cross-team collaboration and reduced handoff time. Coordinated with external vendors to validate requirements and resolve design issues early in the process."
     ],
-    "technologies": ["Next.js", "Express", "MongoDB", "Redis", "Socket.io", "Tailwind CSS"]
+    "technologies": null
   },
   {
     "id": "3",
-    "company": "Digital Agency Co",
-    "role": "Frontend Developer",
-    "startDate": "2018-08",
-    "endDate": "2020-02",
-    "shortDate": "2018 – 2020",
+    "company": "Summit Professional Consulting Arborists",
+    "companyMessage": "This company shut down a few years ago and no longer has an active website.",
+    "role": "Lead Software Engineer",
+    "startDate": "2023-02",
+    "endDate": "2023-06",
+    "shortDate": "February 2023 – May 2023",
     "points": [
-      "Developed responsive web applications for clients across various industries",
-      "Collaborated with designers to create pixel-perfect implementations",
-      "Optimized websites for SEO and accessibility"
+      "Led a 7-person student development team to build a React.js and Firebase application that automated data entry and generated government-compliant PDF reports. Engineered full-stack features including OAuth authentication, PostgreSQL storage, a REST API for PDF generation, and a CI/CD pipeline using GitHub Actions. Worked closely with the client to gather requirements and ensure the final product met their operational needs."
     ],
-    "technologies": ["React", "JavaScript", "SCSS", "Webpack", "REST APIs", "Git"]
+    "technologies": ["React", "JavaScript", "Firebase", "PostgreSQL", "GitHub Actions", "REST API"]
   }
 ]

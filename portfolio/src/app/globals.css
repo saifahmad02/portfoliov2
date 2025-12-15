@@ -5,11 +5,12 @@
   :root {
     --background: #f5f5f0;
     --foreground: #1a1a1a;
-    --muted: #888888;
-    --muted-foreground: #555555;
-    --accent: #1a4d2e;
+    --muted: #6b6b6b;
+    --muted-foreground: #484848;
+    --accent: #14694a;
     --accent-foreground: #f5f5f0;
-    --border: #e0e0dc;
+    --border: #d8d8d2;
+    --featured-border: #8a8a85;
   }
 
   /* Dark mode */
@@ -21,6 +22,7 @@
     --accent: #3d9d68;
     --accent-foreground: #1a1a1a;
     --border: #2a2a2a;
+    --featured-border: #3d9d68;
   }
 
   body {
@@ -48,6 +50,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
+  --color-featured-border: var(--featured-border);
 
   /* Font families */
   --font-family-serif: var(--font-serif);
@@ -57,6 +60,17 @@
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+}
+
+/* Add scroll offset to align sections with sidebar */
+section {
+  scroll-margin-top: 2.5rem; /* 40px - matches mobile py-10 */
+}
+
+@media (min-width: 1024px) {
+  section {
+    scroll-margin-top: 5rem; /* 80px - matches lg:py-20 on sidebar and main */
+  }
 }
 
 /* Custom scrollbar styling */

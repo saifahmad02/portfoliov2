@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Red_Hat_Mono } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-serif",
-  display: "swap",
-});
-
-const redHatMono = Red_Hat_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -26,12 +19,13 @@ const themeScript = `
   (function() {
     try {
       var stored = localStorage.getItem('theme');
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-      if (stored === 'dark' || (!stored && prefersDark)) {
-        document.documentElement.classList.add('dark');
-      } else {
+      // Default to dark mode for all users
+      if (stored === 'light') {
         document.documentElement.classList.remove('dark');
+      } else {
+        // Dark mode by default (if no preference or preference is dark)
+        document.documentElement.classList.add('dark');
       }
     } catch (e) {}
   })();
@@ -47,7 +41,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className={`${cormorantGaramond.variable} ${redHatMono.variable} font-mono antialiased`}>
+      <body className={`${cormorantGaramond.variable} font-mono antialiased`} style={{ ['--font-mono' as string]: 'Satoshi, sans-serif' }}>
         {children}
       </body>
     </html>

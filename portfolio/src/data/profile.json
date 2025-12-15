@@ -1,22 +1,27 @@
 {
   "name": "Saif Ahmad",
-  "headline": "Software Engineer & Full-Stack Developer",
+  "headline": "Software Engineer",
+  "tagline": "Building scalable applications and sharing insights on modern software engineering.",
   "bio": "Building scalable applications and sharing insights on modern software engineering. Passionate about creating elegant solutions to complex problems.",
-  "email": "contact@saifahmad.dev",
-  "mediumUrl": "https://medium.com/@saifahmad",
-  "notionUrl": "https://notion.so/saifahmad/case-studies",
+  "email": "saifattq@gmail.com",
+  "mediumUrl": "https://medium.com/@saifattiqueahmadd",
+  "notionUrl": "https://saifsgallery.notion.site/Case-Studies-by-Saif-Ahmad-295819ee44518044acaed2503e66d847",
   "socialLinks": [
     {
       "platform": "GitHub",
-      "url": "https://github.com/saifahmad"
+      "url": "https://github.com/saifahmad02"
     },
     {
       "platform": "LinkedIn",
-      "url": "https://linkedin.com/in/saifahmad"
+      "url": "https://www.linkedin.com/in/saifattiqueahmad/"
     },
     {
-      "platform": "Twitter",
-      "url": "https://twitter.com/saifahmad"
+      "platform": "Medium",
+      "url": "https://medium.com/@saifattiqueahmad"
+    },
+    {
+      "platform": "Notion",
+      "url": "https://saifsgallery.notion.site/Case-Studies-by-Saif-Ahmad-295819ee44518044acaed2503e66d847"
     }
   ]
 }

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 /* eslint-disable react-hooks/set-state-in-effect */
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark'); // Default to dark
   const [mounted, setMounted] = useState(false);
 
   // Set mounted state and read initial theme from DOM after mount

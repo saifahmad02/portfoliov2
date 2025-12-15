@@ -2,43 +2,27 @@
   "profileLinks": [
     {
       "id": "medium",
-      "label": "All Articles on Medium",
+      "label": "Articles on Medium",
       "labelMobile": "All on Medium",
-      "url": "https://medium.com/@saifahmad",
+      "url": "https://medium.com/@saifattiqueahmad",
       "icon": "medium"
     },
     {
       "id": "notion",
       "label": "Case Studies on Notion",
       "labelMobile": "Case Studies",
-      "url": "https://notion.so/saifahmad",
+      "url": "https://saifsgallery.notion.site/Case-Studies-by-Saif-Ahmad-295819ee44518044acaed2503e66d847",
       "icon": "notion"
     }
   ],
   "items": [
     {
       "id": "1",
-      "title": "Building Scalable Microservices with Node.js",
-      "description": "A deep dive into architecting microservices that can handle millions of requests per day.",
-      "platform": "Medium",
-      "url": "https://medium.com/@saifahmad/building-scalable-microservices",
-      "date": "2024-11-14"
-    },
-    {
-      "id": "2",
-      "title": "Product Discovery: E-Commerce Platform Redesign",
-      "description": "Case study on improving conversion rates through user research and iterative design.",
-      "platform": "Notion",
-      "url": "https://notion.so/saifahmad/ecommerce-case-study",
-      "date": "2024-10-19"
-    },
-    {
-      "id": "3",
-      "title": "TypeScript Best Practices for Large Codebases",
-      "description": "Lessons learned from maintaining type safety across multiple teams and repositories.",
-      "platform": "LinkedIn",
-      "url": "https://linkedin.com/pulse/typescript-best-practices-saif-ahmad",
-      "date": "2024-09-04"
+      "title": "Copository: Building A Production-Ready App in Two Weeks",
+      "description": "How I built an end-to-end serverless pipeline that turns GitHub repos into readable documentation.",
+      "platform": "Case Study ",
+      "url": "https://saifsgallery.notion.site/Copository-295819ee4451808e8e8dea7bf3c7c818",
+      "date": "2025-12-14"
     }
   ]
 }
