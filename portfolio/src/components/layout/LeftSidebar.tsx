@@ -7,7 +7,7 @@ export default function LeftSidebar() {
     <aside className="lg:sticky lg:top-0 lg:h-screen lg:flex lg:flex-col lg:justify-between py-10 lg:py-20">
       <div>
         {/* Name - Large Cormorant Garamond */}
-        <h1 className="font-serif font-bold text-accent text-5xl sm:text-6xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-tight mb-2 whitespace-nowrap">
+        <h1 className="font-serif font-bold text-accent text-5xl sm:text-6xl lg:text-5xl xl:text-6xl 2xl:text-8xl leading-tight mb-2">
           {profileData.name}
         </h1>
 
@@ -20,6 +20,40 @@ export default function LeftSidebar() {
         <p className="font-mono text-muted text-sm sm:text-base lg:text-base mb-8 max-w-[90%]">
           {profileData.tagline || profileData.bio}
         </p>
+
+        {/* Resume Link */}
+        {profileData.resumeUrl && (
+          <a
+            href={profileData.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 lg:gap-3 px-3 lg:px-4 py-2 lg:py-3 border border-border rounded-lg font-mono text-xs lg:text-sm text-foreground hover:text-accent hover:border-accent transition-all duration-200 group mb-6"
+          >
+            <svg
+              className="w-4 h-4 lg:w-5 lg:h-5 text-muted group-hover:text-accent transition-colors"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>View Resume</span>
+            <svg
+              className="w-3 h-3 lg:w-4 lg:h-4 ml-auto text-muted group-hover:text-accent transition-colors"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        )}
       </div>
 
       {/* Social Icons + Contact - Anchored at Bottom */}
