@@ -11,7 +11,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: "Saif Ahmad - Portfolio",
-  description: "Software Engineer & Full-Stack Developer - Building scalable applications and sharing insights on modern web development.",
+  description: "Software Engineer - Building scalable applications and sharing insights on modern web development.",
 };
 
 // Script to prevent flash - runs before React hydrates
