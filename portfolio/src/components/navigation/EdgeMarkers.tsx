@@ -90,10 +90,10 @@ export default function EdgeMarkers() {
 
                 {/* Section Name - Below marker, left-aligned to marker start */}
                 <span
-                  className={`font-mono text-xs uppercase tracking-wide self-end transition-all duration-200 ${
+                  className={`font-mono uppercase tracking-wide self-end transition-all duration-200 ${
                     isActive
-                      ? "text-accent opacity-100"
-                      : "text-muted opacity-0 group-hover:opacity-100 group-hover:text-accent"
+                      ? "text-accent opacity-100 text-xs"
+                      : "text-muted opacity-50 text-[10px] group-hover:opacity-100 group-hover:text-accent group-hover:text-xs"
                   }`}
                 >
                   {section.label}

@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Copository - AI Documentation Generator",
-    "shortDescription": "A fully deployed serverless application that generates documentation from GitHub repositories using googles Gemini API.",
+    "shortDescription": "A fully deployed serverless application that generates documentation from GitHub repositories using Google's Gemini API.",
     "fullDescription": "Coscribe transforms GitHub repositories into readable documentation using AI. Submit a repo URL and the system fetches, preprocesses, and intelligently analyzes your codebase to generate structured documentation. Capable of handling everything from small utilities to full projects in under two minutes.",
     "technologies": ["Next.js", "TypeScript", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB", "Gemini API", "Vercel"],
     "thumbnail": "/images/projects/copository.jpg",

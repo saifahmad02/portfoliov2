@@ -6,6 +6,7 @@ import Experience from "@/components/Experience/Experience";
 import Projects from "@/components/sections/Projects";
 import Footer from "@/components/sections/Footer";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { MobileNav } from "@/components/navigation/MobileNav";
 
 export default function Home() {
   return (
@@ -35,8 +36,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Floating Theme Toggle - Mobile/Tablet only (hidden on desktop lg+) */}
-      <div className="lg:hidden fixed bottom-6 right-6 z-40">
+      {/* Floating Navigation and Theme Toggle - Mobile/Tablet only (hidden on desktop lg+) */}
+      <div className="lg:hidden fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        {/* Mobile Navigation Menu */}
+        <div className="p-2 rounded-full bg-background/80 backdrop-blur-md border border-border shadow-lg hover:border-accent hover:shadow-xl transition-all duration-200">
+          <MobileNav />
+        </div>
+
+        {/* Theme Toggle */}
         <div className="p-2 rounded-full bg-background/80 backdrop-blur-md border border-border shadow-lg hover:border-accent hover:shadow-xl transition-all duration-200">
           <ThemeToggle />
         </div>
