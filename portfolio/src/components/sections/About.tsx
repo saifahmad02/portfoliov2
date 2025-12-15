@@ -30,7 +30,7 @@ export default function About() {
     <section id="about" className="pb-12 lg:pb-40">
       <SectionHeader
         title="About"
-        tagline="A brief look into me, passed the resume."
+        tagline="A brief look into me, past the resume."
       />
 
       <div className="space-y-4 font-mono text-xs md:text-sm lg:text-sm xl:text-base leading-relaxed text-foreground">
