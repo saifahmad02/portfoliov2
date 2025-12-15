@@ -11,6 +11,7 @@ export interface Profile {
   tagline?: string;
   bio: string;
   email: string;
+  resumeUrl?: string;
   socialLinks: SocialLink[];
   mediumUrl?: string;
   notionUrl?: string;
