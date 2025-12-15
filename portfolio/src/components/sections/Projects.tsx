@@ -66,7 +66,7 @@ export default function Projects() {
               {featuredProject.shortDescription}
             </p>
 
-            {/* Technologies and Click to expand */}
+            {/* Technologies and Expand Icon */}
             <div className="flex items-end justify-between gap-4">
               <div className="flex flex-wrap gap-1.5 md:gap-2">
                 {featuredProject.technologies.map((tech) => (
@@ -78,9 +78,22 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <span className="text-xs font-mono text-muted/60 hover:text-accent transition-colors duration-200 whitespace-nowrap">
-                Click to expand →
-              </span>
+              <button
+                className="text-muted/60 hover:text-accent transition-colors duration-200 shrink-0"
+                aria-label="Expand project details"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -105,13 +118,23 @@ export default function Projects() {
                 <p className="text-sm font-mono text-muted leading-relaxed mb-1">
                   {project.shortDescription}
                 </p>
-                <span className="text-xs font-mono text-muted/60 group-hover:text-accent transition-colors duration-200">
+                {/* Mobile: Year and Click to expand on same line */}
+                <div className="md:hidden flex items-center justify-between gap-2 mt-2">
+                  <span className="text-sm font-mono text-muted">
+                    {project.year}
+                  </span>
+                  <span className="text-xs font-mono text-muted/60 group-hover:text-accent transition-colors duration-200">
+                    Click to expand →
+                  </span>
+                </div>
+                {/* Desktop: Click to expand only */}
+                <span className="hidden md:inline-block text-xs font-mono text-muted/60 group-hover:text-accent transition-colors duration-200">
                   Click to expand →
                 </span>
               </div>
 
-              {/* Right: Year */}
-              <div className="text-sm font-mono text-muted md:text-right">
+              {/* Right: Year - Desktop only */}
+              <div className="hidden md:block text-sm font-mono text-muted md:text-right">
                 {project.year}
               </div>
             </div>
@@ -157,7 +180,7 @@ export default function Projects() {
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-muted hover:text-foreground transition-colors rounded-full hover:bg-muted/10"
+              className="absolute top-3 right-3 md:top-4 md:right-4 w-9 h-9 md:w-8 md:h-8 flex items-center justify-center text-foreground md:text-muted hover:text-accent bg-muted/10 md:bg-transparent transition-colors rounded-full hover:bg-muted/20 z-10"
               aria-label="Close modal"
             >
               <svg
@@ -196,12 +219,12 @@ export default function Projects() {
             </p>
 
             {/* Title */}
-            <h3 className="text-3xl font-serif font-semibold text-accent mb-4">
+            <h3 className="text-xl md:text-3xl font-serif font-semibold text-accent mb-3 md:mb-4">
               {selectedProject.title}
             </h3>
 
             {/* Long Description */}
-            <p className="text-sm md:text-base font-mono text-muted leading-relaxed mb-6">
+            <p className="text-xs md:text-base font-mono text-muted leading-relaxed mb-4 md:mb-6">
               {selectedProject.fullDescription}
             </p>
 
