@@ -12,6 +12,16 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Saif Ahmad - Portfolio",
   description: "Software Engineer - Building scalable applications and sharing insights on modern web development.",
+  openGraph: {
+    title: "Saif Ahmad - Portfolio",
+    description: "Software Engineer",
+    images: [],
+  },
+  twitter: {
+    card: "summary", 
+    title: "Saif Ahmad - Portfolio",
+    description: "Software Engineer",
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
