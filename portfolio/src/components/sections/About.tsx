@@ -55,14 +55,20 @@ export default function About() {
         </p>
 
         <p>
-          My most recent project,{" "}
+          I&apos;m currently at{" "}
+          <a
+            href="#experience"
+            className="text-accent underline"
+          >
+            SellStatic,
+          </a> an early-stage AI marketing startup, building full-stack features across the product. My most recent project,{" "}
           <a
             href="#projects"
             className="text-accent underline"
           >
-            Copository,
-          </a> is an AI-powered tool that converts GitHub repositories into structured documentation. It&apos;s been an incredible space to explore how{" "}
-          <span className="text-accent">architecture, automation, and cloud workflows</span> come together to form a complete system. Before that, I worked at{" "}
+            SKUai,
+          </a> is an AI-native SKU catalog standardization platform I built for the Wealthsimple Builders program — a great space to explore how{" "}
+          <span className="text-accent">architecture, automation, and AI</span> come together. Before that, I worked at{" "}
           <a
             href="#experience"
             className="text-accent underline"

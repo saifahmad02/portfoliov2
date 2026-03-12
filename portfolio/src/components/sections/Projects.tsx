@@ -12,9 +12,8 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
-  // Get featured project (first one with featured: true, or just first project)
-  const featuredProject = projects.find((p) => p.featured) || projects[0];
-  const listProjects = projects.filter((p) => p.id !== featuredProject?.id);
+  const featuredProjects = projects.filter((p) => p.featured);
+  const listProjects = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="pb-12 lg:pb-40">
@@ -23,9 +22,10 @@ export default function Projects() {
         tagline="A collection of projects and contributions I'm proud of."
       />
 
-      {/* Featured Project Card */}
-      {featuredProject && (
+      {/* Featured Project Cards */}
+      {featuredProjects.map((featuredProject) => (
         <div
+          key={featuredProject.id}
           onClick={() => setSelectedProject(featuredProject)}
           className="mb-8 lg:mb-16 border-[0.5px] border-featured-border rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:border-accent hover:shadow-[0_8px_30px_rgb(20,105,74,0.3)] dark:hover:shadow-[0_8px_30px_rgb(61,157,104,0.4)]"
         >
@@ -97,7 +97,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      )}
+      ))}
 
       {/* Project List */}
       <div className="flex flex-col overflow-hidden">
