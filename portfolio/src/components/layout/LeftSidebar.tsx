@@ -21,8 +21,8 @@ export default function LeftSidebar() {
           {profileData.tagline || profileData.bio}
         </p>
 
-        {/* Resume Link - Desktop only */}
-        {profileData.resumeUrl && (
+        {/* Resume Link - Desktop only (deprecated) */}
+        {/* {profileData.resumeUrl && (
           <a
             href={profileData.resumeUrl}
             target="_blank"
@@ -53,7 +53,7 @@ export default function LeftSidebar() {
               <path d="M9 5l7 7-7 7" />
             </svg>
           </a>
-        )}
+        )} */}
       </div>
 
       {/* Social Icons + Contact - Anchored at Bottom */}
@@ -104,6 +104,7 @@ export default function LeftSidebar() {
                 )}
               </a>
             ))}
+          {/* Resume icon - deprecated
           {profileData.resumeUrl && (
             <a
               href={profileData.resumeUrl}
@@ -118,7 +119,7 @@ export default function LeftSidebar() {
                 <path d="M9 13h6M9 17h6" />
               </svg>
             </a>
-          )}
+          )} */}
         </div>
 
         {/* Social Icons - Desktop only */}

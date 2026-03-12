@@ -1,6 +1,19 @@
 [
   {
     "id": "1",
+    "company": "SellStatic AI",
+    "companyUrl": "https://www.sellstatic.com",
+    "role": "Software Engineer",
+    "startDate": "2025-09",
+    "endDate": "",
+    "shortDate": "Sept 2025 – Present",
+    "points": [
+      "Working as a software engineer at an early-stage AI marketing startup collaborating directly with founders across the entire stack from backend to frontend. Building backend services using Python and FastAPI, integrating Google Gemini APIs and Vertex AI for ad generation, and developing the production web application using TypeScript, Next.js, and Tailwind CSS on Vercel."
+    ],
+    "technologies": ["Python", "FastAPI", "GCP", "GeminiAI", "Next.js","React", "PostgreSQL"]
+  },
+  {
+    "id": "2",
     "company": "Bank of Montreal",
     "companyUrl": "https://www.bmo.com",
     "role": "Infrastructure Solution Consultant Intern, Data & Infrastructure",
@@ -13,7 +26,7 @@
     "technologies": ["Python", "Pandas", "Azure","Confluence", "Excel"]
   },
   {
-    "id": "2",
+    "id": "3",
     "company": "Bell Canada",
     "companyUrl": "https://business.bell.ca/shop/medium-large/business-marketplace",
     "role": "Technical Sales Support Intern, Pre-Sales Design, Bell Business Markets",
@@ -26,7 +39,7 @@
     "technologies": ["AWS", "Azure", "Microsoft 365", "VoIP"]
   },
   {
-    "id": "3",
+    "id": "4",
     "company": "Summit Professional Consulting Arborists",
     "companyMessage": "This company shut down a few years ago and no longer has an active website.",
     "role": "Lead Software Engineer",

@@ -18,6 +18,14 @@
   "items": [
     {
       "id": "1",
+      "title": "SKUai: An AI Pipeline for SKU standardization at scale",
+      "description": "How I replaced months of manual spreadsheet reconciliation using vector embeddings and LLM verification.",
+      "platform": "Case Study ",
+      "url": "https://saifsgallery.notion.site/SKUai-321819ee4451803c81e7f5a5431e66b2",
+      "date": "2026-03-7"
+    },
+    {
+      "id": "2",
       "title": "Copository: Building A Production-Ready App in Two Weeks",
       "description": "How I built an end-to-end serverless pipeline that turns GitHub repos into readable documentation.",
       "platform": "Case Study ",
