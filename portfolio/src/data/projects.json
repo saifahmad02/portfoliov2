@@ -1,9 +1,27 @@
 [
-  {
+    {
     "id": "1",
+    "title": "SKUai - AI-Native SKU catalog Standardization Platform",
+    "shortDescription": "An AI-powered catalog standardization platform that uses vector embeddings and Claude to replace months of manual product reconciliation.",
+    "fullDescription": "SKUai solves post-acquisition catalog fragmentation where companies inherit overlapping products across separate billing systems. Upload messy catalogs and the system proposes a unified schema, normalizes products, and uses vector embeddings with pgvector to find duplicate candidates in milliseconds. Only high-similarity matches go to Claude for semantic verification with confidence scores and reasoning. Humans make the final call at two decision gates",
+    "technologies": ["Claude API","OpenAI Embeddings","Python","FastAPI","PostgreSQL", "pgvector","Next.js", "React","TypeScript", "Vercel"],
+    "thumbnail": "/images/projects/SKUai.jpg",
+    "links": [
+      {
+        "type": "case-study",
+        "label": "Read Case Study",
+        "url": "https://saifsgallery.notion.site/SKUai-321819ee4451803c81e7f5a5431e66b2",
+        "icon": "document"
+      }
+    ],
+    "year": "2026",
+    "featured": true
+  },
+  {
+    "id": "2",
     "title": "Copository - AI Documentation Generator",
     "shortDescription": "A fully deployed serverless application that generates documentation from GitHub repositories using Google's Gemini API.",
-    "fullDescription": "Coscribe transforms GitHub repositories into readable documentation using AI. Submit a repo URL and the system fetches, preprocesses, and intelligently analyzes your codebase to generate structured documentation. Capable of handling everything from small utilities to full projects in under two minutes.",
+    "fullDescription": "Copository transforms GitHub repositories into readable documentation using AI. Submit a repo URL and the system fetches, preprocesses, and intelligently analyzes your codebase to generate structured documentation. Capable of handling everything from small utilities to full projects in under two minutes.",
     "technologies": ["Next.js", "TypeScript", "Python", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB", "Gemini API", "Vercel"],
     "thumbnail": "/images/projects/copository.jpg",
     "links": [
@@ -30,7 +48,7 @@
     "featured": true
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "We.AI - Western Engineering AI Assistant",
     "shortDescription": "An AI-powered chatbot for Western Engineering students to get instant answers to their questions.",
     "fullDescription": "We.AI is an AI-powered chatbot designed specifically for Western Engineering students. It provides instant answers to common questions about courses, professors, and university resources. The chatbot is built on a comprehensive dataset compiled from the university's official websites and public data sources to deliver accurate and relevant information.",
@@ -53,7 +71,7 @@
     "year": "2025"
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Portfolio V1 - My First Developer Portfolio",
     "shortDescription": "My first portfolio website built with Next.js and Tailwind CSS.",
     "fullDescription": "A personal portfolio website showcasing my projects, skills, and experience as a software engineer. Features a clean, modern design with smooth animations and interactive elements to create an engaging user experience.",
